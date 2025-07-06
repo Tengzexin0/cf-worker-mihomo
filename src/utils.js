@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import YAML from 'yaml';
-export const backimg = 'https://t.alcy.cc/ycy';
+// export const backimg = 'https://t.alcy.cc/ycy';
+export const backimg = '';
 export const subapi = 'https://url.v1.mk';
 export const mihomo_top = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/Config/Mihomo_lite.yaml';
 export const singbox_1_11 = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/refs/heads/main/Config/singbox_1.11.X.json';
