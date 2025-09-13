@@ -2,8 +2,10 @@ import fetch from 'node-fetch';
 import YAML from 'yaml';
 // export const backimg = 'https://t.alcy.cc/ycy';
 export const backimg = '';
-export const subapi = 'https://url.v1.mk';
-export const mihomo_top = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/Config/Mihomo_lite.yaml';
+// export const subapi = 'https://url.v1.mk';
+export const subapi = 'https://subapi.zeabur.app';// 自建订阅转换
+// export const mihomo_top = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/Config/Mihomo_lite.yaml';
+export const mihomo_top = 'https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/MultiMode_No_DNS.yaml';
 export const singbox_1_11 = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/refs/heads/main/Config/singbox_1.11.X.json';
 export const singbox_1_12 = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/refs/heads/main/Config/singbox-1.12.X.json';
 export const singbox_1_12_alpha = 'https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/refs/heads/main/Config/singbox-1.12.X.alpha.json';
@@ -459,6 +461,7 @@ export async function getFakePage(variable, configdata) {
             cursor: pointer;
             transition: all 0.2s;
             border-bottom: 1px solid #eee;
+			font-size: 14px;
         }
         
         .template-option:last-child {
@@ -860,7 +863,7 @@ export async function getFakePage(variable, configdata) {
                 const groupLabel = document.createElement('div');
                 groupLabel.style.padding = '10px 20px';
                 groupLabel.style.fontWeight = 'bold';
-                groupLabel.style.color = '#555';
+                groupLabel.style.color = '#0000FF';
                 groupLabel.style.backgroundColor = '#f5f5f5';
                 groupLabel.textContent = group.label;
                 optionsContainer.appendChild(groupLabel);
@@ -998,29 +1001,9 @@ export function configs() {
                 label: "通用",
                 options: [
                     {
-                        label: "默认（精简版）（仅国内外分流）[秋风_ads]",
-                        value: "https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/template/Mihomo_default.yaml"
+                        label: "默认[多媒体多国家NO_DNS]",
+                        value: "https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/MultiMode_No_DNS.yaml"
                     },
-                    {
-                        label: "默认（精简版）（仅国内外分流）[Dustinwin_ads]",
-                        value: "https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/template/Mihomo_default_Ads_Dustinwin.yaml"
-                    },
-                    {
-                        label: "默认（精简版）（无去广告）",
-                        value: "https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/template/Mihomo_default_NoAds.yaml"
-                    },
-                    {
-                        label: "默认（全分组）[秋风_ads]",
-                        value: "https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/template/Mihomo_default_full.yaml"
-                    },
-                    {
-                        label: "默认（全分组）[Dustinwin_ads]",
-                        value: "https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/template/Mihomo_default_full_Ads_Dustinwin.yaml"
-                    },
-                    {
-                        label: "默认（全分组）（无去广告）",
-                        value: "https://raw.githubusercontent.com/Kwisma/cf-worker-mihomo/main/template/Mihomo_default_full_NoAds.yaml"
-                    }
                 ]
             },
             {
