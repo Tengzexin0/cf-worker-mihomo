@@ -589,7 +589,7 @@ export async function getFakePage(variable, configdata) {
 </head>
 
 <body>
-    <a href="${atob('aHR0cHM6Ly9naXRodWIuY29tL0t3aXNtYS9jZi13b3JrZXItbWlob21v')}" target="_blank" class="github-corner"
+    <a href="${atob('aHR0cHM6Ly9naXRodWIuY29tL1Rlbmd6ZXhpbjAvY2Ytd29ya2VyLW1paG9tbw==')}" target="_blank" class="github-corner"
         aria-label="View source on Github">
         <svg viewBox="0 0 250 250" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -998,10 +998,10 @@ export function configs() {
     const data = {
         mihomo: [
             {
-                label: "通用",
+                label: " 藤泽新订阅转换",
                 options: [
                     {
-                        label: "默认[多媒体多国家NO_DNS]",
+                        label: "MultiMode_No_DNS（与Github同步）",
                         value: "https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/MultiMode_No_DNS.yaml"
                     },
                 ]
