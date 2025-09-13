@@ -863,7 +863,7 @@ export async function getFakePage(variable, configdata) {
                 const groupLabel = document.createElement('div');
                 groupLabel.style.padding = '10px 20px';
                 groupLabel.style.fontWeight = 'bold';
-                groupLabel.style.color = '#0000FF';
+                groupLabel.style.color = 'rgba(0, 0, 255, 0.6)';
                 groupLabel.style.backgroundColor = '#f5f5f5';
                 groupLabel.textContent = group.label;
                 optionsContainer.appendChild(groupLabel);
